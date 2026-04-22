@@ -29,13 +29,16 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 
     background-color: aliceblue;
     width: 250px;
     height: 500px;
-    border-radius: 30px;
-    overflow: hidden;
+    border-radius: 30px;    
     box-shadow: 0px 0px 10px 0px #00000094;
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
@@ -44,6 +47,7 @@ section#login > div#imagem{
     background-image: url(../imagens/pexels-mitchel3uo-7013464.jpg);
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 200px;
 }
 
